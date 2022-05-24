@@ -1,0 +1,38 @@
+body{
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    background-size:cover;
+}
+h1{
+    background-color:#eff70c;
+    color:#140cf7;
+}
+#show_sketch{
+    float: right;
+    font-size:18px;
+    font-weight:bold;
+    color:black;
+}
+#clear_canvas{
+    background-color: rgb(68, 6, 6);
+}
+label{
+    font-size:25px;
+}
+
+canvas{
+    border:5px yellowgreen ridge;
+    border-radius:20px;
+    animation-name:doodling;
+    animation-duration:4s;
+    animation-iteration-count:infinite;
+}
+@keyframes doodling{
+    from{
+        box-shadow:1px 1px 40px yellow;
+    }
+    to{
+        box-shadow:1px 1px 40px rgb(97, 231, 97);
+    }
+}
